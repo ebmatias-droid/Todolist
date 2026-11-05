@@ -1,13 +1,53 @@
-Todolist
-a platform to mark work
-Hi!
-I offer Freelance coding with straightforward pricing and reliable delivery.
-• Clear communication
-• Fair prices
-• Examples available
-Portfolio: freelancecoding.carrd.co
-Contact: matiassk@icloud.com
-Payment policy: 50% upfront, 50% after delivery (Bitcoin only)Minimum 25 USD per code a basic one but it can vary in the complexity.
-Code delivery: By default in a public GitHub repository. Private/exclusive repo available for an additional fee.
-Database: I only develop the code. Clients must provide their own database if required.
-Optional tips: If you enjoyed the work and want to support me further, tips are welcome but not required.
+# To-Do List
+
+A lightweight task manager built with vanilla JavaScript, Vite, and Supabase.
+
+## Features
+
+- Create tasks
+- Mark tasks as completed
+- Filter all, active, and completed tasks
+- Remove individual tasks
+- Clear completed tasks
+- Store tasks in a Supabase database
+
+## Requirements
+
+- Node.js
+- A Supabase project with a `todos` table configured for the application
+
+## Setup
+
+Install dependencies:
+
+```sh
+npm install
+```
+
+Create a `.env` file in the project root and configure the Supabase project URL and anonymous key using the variable names expected by `src/main.js`.
+
+Start the development server:
+
+```sh
+npm run dev
+```
+
+Create a production build:
+
+```sh
+npm run build
+```
+
+Preview the production build:
+
+```sh
+npm run preview
+```
+
+## Database
+
+The client expects a `todos` table with task text, completion state, and creation timestamp fields. Configure appropriate Supabase Row Level Security policies before deploying; never expose a service-role key in client-side environment variables.
+
+## License
+
+This repository is marked as proprietary. See [LICENSE](LICENSE) for the applicable terms.
