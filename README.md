@@ -24,7 +24,7 @@ Install dependencies:
 npm install
 ```
 
-Create a `.env` file in the project root and configure the Supabase project URL and anonymous key using the variable names expected by `src/main.js`.
+Create a `.env` file in the project root and configure the Supabase project URL and anonymous key using `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`, as read by `src/main.js`.
 
 Start the development server:
 
